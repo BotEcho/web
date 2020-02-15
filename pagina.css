@@ -1,0 +1,197 @@
+*{
+   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.margen_interno{
+    padding: 0 15px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.alfa{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header{
+    background: url(imagenes/01.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .menu{
+        background:rgba(0, 0, 0, .1);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+    }
+
+            .logo{   
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 30px;
+                }
+                    .logo a:hover{
+                        color: blueviolet;
+                    }
+
+            .nav{
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    letter-spacing: 2px;
+                }
+                    .nav a:hover{
+                        color: blueviolet;
+                    }
+
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .social a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 18px;
+                    padding: 0 5px;
+                    
+                }
+                    .social a:hover{
+                        color: blueviolet;
+                    }
+
+
+    .texto-principal{
+        height: 600px;
+        display: flex;
+        align-items: center;
+    }
+
+            h1{
+                background: rgba(0, 0, 0, 0.466);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 23px;
+                color: #ff9d9d;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+
+            }
+
+.section{
+    background: #6e5773;
+    display: flex;
+}
+
+    .articulos{
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+            .noticias{
+                padding: 5px;
+                background: #96d1c767;
+                margin: 20px 20px 10px 0px;
+                color: #fff;
+                flex: 1 1 40%; 
+                font-size: 13px;
+                letter-spacing: 1px; 
+                border-radius: 4px;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514); 
+                text-align: justify;              
+            }
+
+                h3{
+                    font-size: 13px;
+                    padding: 10 0px;
+                    
+                }
+                h2{
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    padding: 0 0 10px 0;
+                }
+
+                .noticias img{
+                    width: 100%;
+                }
+
+            .barra{
+                background: #effffb;
+                flex: 1 1 100%
+            }
+
+    .lateral{
+        background: #6e5773;
+        flex: 1 1 auto;
+        align-items: center;
+    }
+            
+            .publicidad{             
+                background: #96d1c767;  
+                margin: 10px;
+                padding: 5px;
+                border-radius: 4px;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514); 
+                text-align: justify; 
+            }
+
+.footer{
+    
+    background: #6e5773;
+    display: flex;
+    justify-content: center;
+    
+}
+    .pie{
+        color: whitesmoke;
+        background: #434c5256;
+        width: 400px;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+
+
+        
+    }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .lateral{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+    .lateral{
+        display: flex;
+        flex-direction: column;
+    }
+}
